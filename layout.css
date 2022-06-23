@@ -7,6 +7,12 @@ body{
     font-family: 'Roboto', sans-serif;
     background-image: url("image/patt.png");
 }
+.container {
+    width: 1700px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .wrapper{
     padding-left: 15px;
     padding-right: 15px;
