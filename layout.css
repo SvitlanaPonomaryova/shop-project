@@ -8,7 +8,7 @@ body{
     background-image: url("image/patt.png");
 }
 .container {
-    width: 1700px;
+    width: 1200px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -28,7 +28,7 @@ body{
     margin-left: -15px;
     margin-right: -15px;
     display: block;
-    position: relative;
+    position: relative; 
 }
 .row::after,.menu::after{
     content: "";
@@ -60,7 +60,7 @@ body{
 }
 
 .header{
-    width: 1700px;
+    width: 100%;
     padding: 25px 0;
     background-color: rgba(255, 255, 255, 0.75);
 }
@@ -95,12 +95,12 @@ li:hover > ul{
     display: block;
 }
 .submenu {
-    display: block;
+    display: none;
     position: absolute;
     float: none;
+    z-index: 1;
 }
 .submenu li { 
-    display: none;
     position: relative;
     width: 287px;
     height: 41px;
@@ -127,12 +127,19 @@ ul.submenu:hover li a {
     height: 40px;  
 }
 input::placeholder {
-    display: block ;
+    display: block;
     position: relative;
     height: 50px;
     font-size: 21px;
     color: #2c71b8;  
     text-overflow: ellipsis;
+    border: rgba(255, 255, 255, 0.75);;
+}
+input {
+    border: #2c71b8;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100%;
 }
 .btn-find {
     display: block;
@@ -170,24 +177,23 @@ input::placeholder {
     border-radius: 100%;
 }
 .slides {
-    width: 1700px;
+    width: 100%;
     height: 400px;
     position: relative;
     background-color: rgba(35, 90, 147, 0.5);
     border-bottom: 1px solid #cdddee;
     padding-bottom: 159px;
 }
-.slide-word {
-    text-align: center;
+
+.slider-block > div {
+    padding: 150px 0;
+    font-size: 50px;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-size: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    bottom: 50%;
-    margin: 0 auto; 
+    text-align: center;
+}
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
 }
 .breadcrumbs {
     width: 500px;
@@ -239,6 +245,8 @@ input::placeholder {
     display: none;
     position: absolute;
     width: 268px;
+    background-color: #2c71b8;
+    z-index: 1;
 }
 .menu-list a:hover {
     display: block;
@@ -257,7 +265,7 @@ ul.menu-list:hover li a{
     border: 1px solid #cdddee;
     position: relative;
 }
-.monitor {
+.picture {
     display: block;
     margin: 0 auto;
     padding-top: 45px;
@@ -287,12 +295,17 @@ ul.menu-list:hover li a{
     height: 30px;
     border: 1px solid #548cc5;
     position: absolute;
+    background-image: url(image/white-heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
     top: 50px;
     right: 10px;
 }
-.like:hover {
-    color: #ffffff;
+.like:hover,.liked {
     background-color: #2c71b8;
+}
+.liked {
+    background-image: url(image/white-heart.png);
 }
 .like > img {
     display: block;
@@ -404,6 +417,10 @@ p {
     left: 29px;
     right: 29px;
 }
+.btn-more:hover {
+    background-color: rgba(86, 141, 198, 0.75);
+    border: none;
+}
 .btn-add {
     display: block;
     color: #fff;
@@ -411,13 +428,20 @@ p {
     font-weight: 700;
     font-size: 21px;
     text-transform: uppercase;
-    background-color: rgba(86, 141, 198, 0.75);
+    background-color: rgba(44, 113, 184, 0.20);
     text-align: center;
-    padding: 16px 38px;
+    border: 1px solid #fff;
+    padding: 15px 28px;
     max-width: 210px;
-    position: absolute;
-    left: 29px;
-    bottom: 25px;
+    margin-bottom: 14px;
+    position: relative;
+    top: 70px;
+    left: 5px;
+    margin-left: 10px;
+}
+.btn-add:hover {
+    background-color: rgba(86, 141, 198, 0.75);
+    border: none;
 }
 .white-cart {
     display: block;
@@ -434,6 +458,91 @@ p {
     margin-bottom: 89px;
     text-align: center;
 }
-.container {
-   
+.col-md-3-filter {
+    width: 270px;
+    height: 842px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: rgba(86, 141, 198, 0.5);
+    border-right: 1px solid #fff;
+
+}
+.divice {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.square {
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    position: relative;
+}
+.filter-info {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.color {
+    padding-top: 65px;
+}
+.submit {
+    width: 209px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #2c71b8;
+    border: 1px solid #fff;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+/**************************** Footer***************************************/
+/*.footer {
+   width: 100%;
+   height: 100px;
+   background-color: rgba(255, 255, 255, 0.75);
+}
+.contain {
+    width: 163 px;
+    color: #2c71b8;
+    font-size: 21px;
+    margin: 0 auto;
+}*/
+/*********************form**************************************************/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: (0,0,0,0.5);
+    display: none;
+}
+.modal-block {
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    border: 1px solid grey;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+}
+.btn-close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.form-title,.form-field {
+    margin: 15px 0;
+}
+.form-field input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
 }

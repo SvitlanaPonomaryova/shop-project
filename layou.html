@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
@@ -51,7 +53,7 @@
                         <div class="col-md-3">
                             <div class="header-cart">
                                 <img src="image/cart.png" alt="" class="cart-icon">
-                                <div class="products-count">4</div>
+                                <div class="products-count" id="product-count">0</div>
                             </div>
                         </div>
                     </div>
@@ -61,10 +63,74 @@
     </header> 
     <main class="main">
         <div class="slides" >
-            <h1 class="slide-word">Slide #3</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider-block">
+                            <div>Slider 1</div>
+                            <div>Slider 2</div>
+                            <div>Slider 3</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <div class="col-md-3">Filter</div>
+            <div class="col-md-3-filter">
+                <div>
+                    <h3 class="divice">Device type</h3>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Laptop</span>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Tablet</span>
+                    </div>
+                </div>
+                <div class="color">
+                    <h3 class="divice">Color</h3>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Black</span>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Red</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Green</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Blue</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">Orange</span>
+                    </div>
+                </div>
+                <div class="color">
+                    <h3 class="divice">RAM</h3>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">1GB</span>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">2GB</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">4GB</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">6GB</span>
+                    </div>
+                    <div>
+                    <img class="square" src="image/square-png-25146.png" alt="square">
+                    <span class="filter-info">8GB</span>
+                    <P class="filter-info">Show more options...</P>
+                    </div>
+                </div>
+                <button class="submit">Submit</button>
+            </div>
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-md-12">
@@ -97,11 +163,11 @@
                     <div class="col-md-4">
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/monitor.png" alt="" class="monitor"> 
+                                <img src="image/monitor.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
-                                <div class="like">
+                                <div class="like liked">
                                     <img src="image/blue-heart.png" alt="">
                                 </div>
                             </div>
@@ -119,7 +185,7 @@
                                 <div class="product-price">$ 599
                                     <p class="coins">25</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -127,7 +193,7 @@
                         </div>
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/laptop.png" alt="" class="laptop"> 
+                                <img src="image/laptop.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -149,7 +215,7 @@
                                 <div class="product-price">$ 599
                                     <p class="coins">25</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -157,7 +223,7 @@
                         </div>
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/tablet.png" alt="" class="tablet"> 
+                                <img src="image/tablet.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -179,7 +245,7 @@
                                 <div class="product-price">$ 599
                                     <p class="coins">25</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -189,7 +255,7 @@
                     <div class="col-md-4">
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/icon (9).png" alt="" class=""> 
+                                <img src="image/icon (9).png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -211,7 +277,7 @@
                                 <div class="product-price">$ 1250
                                     <p class="coins">99</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -219,7 +285,7 @@
                         </div>
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/mp3.png" alt="" class="mp3"> 
+                                <img src="image/mp3.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -241,7 +307,7 @@
                                 <div class="product-price">$ 1250
                                     <p class="coins">99</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -249,7 +315,7 @@
                         </div>
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/icon (9).png" alt="" class=""> 
+                                <img src="image/icon (9).png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -271,7 +337,7 @@
                                 <div class="product-price">$ 1250
                                     <p class="coins">99</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -281,7 +347,7 @@
                     <div class="col-md-4">
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/watch.png" alt="" class="watch"> 
+                                <img src="image/watch.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -303,7 +369,7 @@
                                 <div class="product-price">$ 399
                                     <p class="coins">50</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -311,7 +377,7 @@
                         </div>
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/sell-phone.png" alt="" class="sell-phone"> 
+                                <img src="image/sell-phone.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -333,7 +399,7 @@
                                 <div class="product-price">$ 399
                                     <p class="coins">50</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -341,7 +407,7 @@
                         </div> 
                         <div class="product">
                             <div class="prosuct-image">
-                                <img src="image/watch.png" alt="" class="watch"> 
+                                <img src="image/watch.png" alt="" class="picture"> 
                                 <div class="zoom">
                                     <img src="image/blue-squre.png" alt="">
                                 </div>
@@ -363,7 +429,7 @@
                                 <div class="product-price">$ 399
                                     <p class="coins">50</p>
                                 </div> 
-                                <button class="btn-more">More details</button>
+                                <button class="btn-more btn-more-details">More details</button>
                                 <botton class="btn-add">Add to cart
                                     <img src="image/white-cart.png" alt="cart" class="white-cart">
                                 </botton>
@@ -375,8 +441,30 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="container">Footer</div>
-    </footer>  
+        <footer class="footer">
+            <div class="contain">Copyright 2017</div>
+        </footer> 
+
+        <div class="modal">
+            <div class="modal-block">
+                <form action="">
+                    <div class="btn-close">X</div>
+                    <h3 class="fofm-title">Please call for more detaels</h3>
+                    <div class="form-fild">
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-fild">
+                        <input type="text" placeholder="Your number">
+                    </div>
+                    <div class="form-btn">
+                        <button>Please call us</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>		
+        <script src="app.js"></script> 
 </body>
 </html>
